@@ -13,3 +13,37 @@
     font-size: 30px;
     text-align: center;
   }
+
+  .navbar{
+    display: flex;
+    flex-direction: row;
+    height: 120px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-title{
+    font-size: 30px;
+    color: blue;
+    justify-items: flex-start;
+  }
+
+  .navbar-title:link {
+    text-decoration: none;
+  }
+
+  .navbar-links {
+    display: inline-block;
+    color: black;
+    justify-content: space-between;
+    height: 100%; 
+    padding-right: 40px;
+  }
+  
+  .navbar-links:link {
+    text-decoration: none;
+  }
+  
+  .navbar-links:hover {
+    text-decoration: underline
+  }
