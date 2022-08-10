@@ -7,9 +7,8 @@
   --brown: #3e2723;
 }
 
-@import url(
-  'https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap'
-  );
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap'
+);
 
 body {
   background-color: var(--grayish);
@@ -21,7 +20,7 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: auto;
-  background-color:  white;
+  background-color: white;
   padding: 10px;
   border-radius: 10px;
 }
@@ -58,6 +57,7 @@ body {
   justify-content: space-between;
   height: 100%;
   padding-right: 40px;
+  font-size: 20px;
 }
 
 .navbar-links:link {
@@ -65,7 +65,8 @@ body {
 }
 
 .navbar-links:hover {
-  text-decoration: underline
+  text-decoration: underline;
+  /* font-weight: 600; */
 }
 
 
@@ -79,17 +80,15 @@ body {
 
 .flex-container {
   display: flex;
-  gap: 10px
+  gap: 10px;
+  padding: 15px;
 }
 
-.settings-colors-container {
+.settings-colors-container,
+.settings-font-container {
   flex-direction: column;
-  margin-right: 30px;
-  /* border: solid black 1px; */
-  gap: 5px;
-  padding-left: 15px;
-  padding-bottom: 15px;
-  padding-right: 30px;
+  gap: 10px;
+  padding: 15px;
 }
 
 #settings-colorbox-container {
@@ -116,22 +115,23 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  
+
 }
-.radio-container:hover input ~ .radio-checkmark {
+
+.radio-container:hover input~.radio-checkmark {
   outline: 2px solid black;
   outline-offset: -2px;
 }
 
-.radio-container input:checked ~ .radio-checkmark {
+.radio-container input:checked~.radio-checkmark {
   outline: 2px solid black;
   outline-offset: -2px;
-  }
+}
 
 .radio-checkmark {
   position: absolute;
   top: 20%;
-  left: 20%; 
+  left: 20%;
   height: 30px;
   width: 30px;
   /* background-color: gray; */
@@ -139,6 +139,7 @@ body {
   outline: 3px solid white;
   outline-offset: -2px;
 }
+
 .fontColorRadio {
   opacity: 0;
   width: 45px;
@@ -150,35 +151,41 @@ body {
 #fontColorRadio-blue {
   background-color: blue;
 }
+
 #fontColorRadio-black {
   background-color: black;
 }
+
 #fontColorRadio-white {
   background-color: white;
 }
+
 #fontColorRadio-red {
   background-color: red;
 }
+
 #fontColorRadio-green {
   background-color: green;
 }
 
 
-.textFormatSwitch, .textLayoutSwitch {
+.textFormatSwitch,
+.textLayoutSwitch {
 
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   margin: 0;
-  width: 32px;
-  min-width: 32px;
-  height: 32px;
+  width: 30px;
+  min-width: 30px;
+  height: 30px;
   margin-right: 12px;
   cursor: pointer;
   background-repeat: no-repeat;
   background-position: center;
   background-color: white;
   border-radius: 5px;
+  margin: 7.5px;
 }
 
 #textLayout-left {
@@ -214,4 +221,76 @@ body {
 .settings-format-container {
   display: flex;
   flex-direction: column;
+  padding: 15px 40px 15px 40px;
+  border-right: var(--bronze) solid 3px;
+  border-left: var(--bronze) solid 3px;
+
+}
+
+.textFormatSwitch:hover,
+.textLayoutSwitch:hover,
+select:hover {
+  outline: 2px solid black;
+  outline-offset: -2px;
+}
+
+#fontSelect {
+  height: 30px;
+  width: fit-content;
+  min-width: 200px;
+  border-radius: 5px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+}
+
+#random-bg-image {
+  background-image: url("./images/icons8-rotate-67.png");
+  background-size: 20px;
+  border-radius: 20px;
+}
+
+.settings-colors-container,
+.settings-font-container,
+.settings-format-container {
+  flex-grow: 1;
+  height: auto;
+  align-items: center;
+}
+
+#close-settings-img {
+  height: 35px;
+  border: solid black 2px;
+  border-radius: 19px;
+  cursor: pointer;
+  position: relative;
+  bottom: 10px;
+  right: 10px;
+  filter: invert(100%);
+}
+
+option {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+}
+
+#close-button-container {
+  width: 10px;
+  position: absolute;
+
+}
+
+footer {
+  margin-top: 100px;
+  border-top: var(--brown) solid 3px;
+  padding: 30px 0 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  font-family: 'Work Sans', sans-serif;
+  margin-left: -30px;
+  margin-right: -30px;
+  margin-bottom: -30px;
+  background-color: #3e2723;
+  color: white;
 }

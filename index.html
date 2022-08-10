@@ -12,15 +12,15 @@
 <body>
 
 
-<!-- navbar -->
-<nav class="navbar">
-    <a class="navbar-title" href="#">Quote Generator</a>
-    <div class="navbar-right">
-        <a class="navbar-links" href="#">About</a>
-        <a class="navbar-links" href="#">All Quotes</a>
-        <a class="navbar-links" href="#">Add Quote</a>
-    </div>
-</nav>
+    <!-- navbar -->
+    <nav class="navbar">
+        <a class="navbar-title" href="#">Quote Generator</a>
+        <div class="navbar-right">
+            <a class="navbar-links" href="#">About</a>
+            <a class="navbar-links" href="#">All Quotes</a>
+            <a class="navbar-links" href="#">Add Quote</a>
+        </div>
+    </nav>
 
     <div class="grid-container">
         <div class="grid-item">Quote of the day</div>
@@ -31,6 +31,9 @@
 
 
     <div class="settings-container flex-container">
+        <div class="flex-container" id="close-button-container">
+            <img src="./images/icons8-multiply-96.png" alt="close settings" id="close-settings-img">
+        </div>
         <div class="settings-colors-container flex-container">
             <p class="settings-para">Font Color</p>
             <div id="settings-colorbox-container">
@@ -55,10 +58,10 @@
                     <span id="fontColorRadio-green" class="radio-checkmark"></span>
                 </label>
             </div>
-            
-            
-            
-            
+
+
+
+
 
             <p class="settings-para">Background Color</p>
             <div id="settings-colorbox-container">
@@ -114,18 +117,19 @@
 
             <p class="settings-para">Random Background Image</p>
             <div class="settings-font-backgroundSwitch">
-                <img src="" alt="switch background image to random">
+                <input type="radio" name="textFormatSwitch" class="textFormatSwitch" id="random-bg-image">
             </div>
 
         </div>
     </div>
 
     <footer>
-        <p id="footer-para">This Website has been brought to you by <a href="">Cohort_9_ProjectTeam_1</a></p>
-        <img src="" alt="github">
-        <img src="" alt="twitter">
-        <img src="" alt="facebook">
-        <img src="" alt="Instagram">
+        <div>
+            <p id="footer-para">This Website has been brought to you by <strong>Cohort_9_ProjectTeam_1</strong></p>
+        </div>
+        <div class="flex-container">
+            <a href="https://github.com/The-Dan-Main/Cohort_9-Quote-Project-1" target="_blank" title="Github repository"><img src="./images/github-logo.png" alt="github"></a>
+        </div>
     </footer>
 
 
