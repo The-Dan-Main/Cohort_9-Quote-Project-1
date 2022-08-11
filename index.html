@@ -10,118 +10,125 @@
 </head>
 
 <body>
+    <div id="mainContainer">
 
+        <nav class="navbar">
+            <a class="navbar-title" href="#">Quote Generator</a>
+            <div class="navbar-right">
+                <a class="navbar-links" href="#">About</a>
+                <a class="navbar-links" href="#">All Quotes</a>
+                <a class="navbar-links" href="#">Add Quote</a>
+            </div>
+        </nav>
 
-    <!-- navbar -->
-    <nav class="navbar">
-        <a class="navbar-title" href="#">Quote Generator</a>
-        <div class="navbar-right">
-            <a class="navbar-links" href="#">About</a>
-            <a class="navbar-links" href="#">All Quotes</a>
-            <a class="navbar-links" href="#">Add Quote</a>
+        <div class="grid-container">
+            <div class="grid-item" id="quote-title">Quote of the day</div>
+            <div class="grid-item" id="quote-text">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua. 
+                At vero eos et accusam et justo duo dolores et ea rebum.
+            </div>
+            <div class="grid-item" id="quote-author">Author </div>
         </div>
-    </nav>
 
-    <div class="grid-container">
-        <div class="grid-item">Quote of the day</div>
-        <div class="grid-item"></div>
-        <div class="grid-item">Socials </div>
+
+
+        <div class="settings-container flex-container">
+            <div class="flex-container" id="close-button-container">
+                <img src="./images/icons8-multiply-96.png" alt="close settings" id="close-settings-img">
+            </div>
+            <div class="settings-colors-container flex-container">
+                <p class="settings-para">Font Color</p>
+                <div id="settings-colorbox-container">
+                    <label class="radio-container">
+                        <input type="radio" class="fontColorSwitch fontColorRadio">
+                        <span id="fontColorRadio-blue" class="radio-checkmark"></span>
+                    </label>
+                    <label class="radio-container">
+                        <input type="radio" class="fontColorSwitch fontColorRadio">
+                        <span id="fontColorRadio-black" class="radio-checkmark"></span>
+                    </label>
+                    <label class="radio-container">
+                        <input type="radio" class="fontColorSwitch fontColorRadio">
+                        <span id="fontColorRadio-white" class="radio-checkmark"></span>
+                    </label>
+                    <label class="radio-container">
+                        <input type="radio" class="fontColorSwitch fontColorRadio">
+                        <span id="fontColorRadio-red" class="radio-checkmark"></span>
+                    </label>
+                    <label class="radio-container">
+                        <input type="radio" class="fontColorSwitch fontColorRadio">
+                        <span id="fontColorRadio-green" class="radio-checkmark"></span>
+                    </label>
+                </div>
+
+
+
+
+
+                <p class="settings-para">Background Color</p>
+                <div id="settings-colorbox-container">
+                    <label class="radio-container">
+                        <input type="radio" class="backgroundColorSwitch fontColorRadio">
+                        <span id="fontColorRadio-blue" class="radio-checkmark"></span>
+                    </label>
+                    <label class="radio-container">
+                        <input type="radio" class="backgroundColorSwitch fontColorRadio">
+                        <span id="fontColorRadio-black" class="radio-checkmark"></span>
+                    </label>
+                    <label class="radio-container">
+                        <input type="radio" class="backgroundColorSwitch fontColorRadio">
+                        <span id="fontColorRadio-white" class="radio-checkmark"></span>
+                    </label>
+                    <label class="radio-container">
+                        <input type="radio" class="backgroundColorSwitch fontColorRadio">
+                        <span id="fontColorRadio-red" class="radio-checkmark"></span>
+                    </label>
+                    <label class="radio-container">
+                        <input type="radio" class="backgroundColorSwitch fontColorRadio">
+                        <span id="fontColorRadio-green" class="radio-checkmark"></span>
+                    </label>
+                </div>
+
+
+
+            </div>
+            <div class="settings-format-container flex-container">
+                <p class="settings-para">Text Layout</p>
+                <div id="settings-colorbox-container">
+                    <input type="radio" name="textLayoutSwitch" class="textLayoutSwitch" id="textLayout-left">
+                    <input type="radio" name="textLayoutSwitch" class="textLayoutSwitch" id="textLayout-center">
+                    <input type="radio" name="textLayoutSwitch" class="textLayoutSwitch" id="textLayout-right">
+                </div>
+
+                <p class="settings-para">Format</p>
+                <div id="settings-colorbox-container">
+                    <input type="radio" name="textFormatSwitch" class="textFormatSwitch" id="textFormat-left">
+                    <input type="radio" name="textFormatSwitch" class="textFormatSwitch" id="textFormat-center">
+                    <input type="radio" name="textFormatSwitch" class="textFormatSwitch" id="textFormat-right">
+                </div>
+
+            </div>
+            <div class="settings-font-container flex-container">
+                <p class="settings-para">Font</p>
+                <select name="font Select" id="fontSelect" title="font Select">
+                    <option value="TBA" id="WorkSans">WorkSans</option>
+                    <option value="TBA" id="Silkscreen">Silkscreen</option>
+                    <option value="TBA" id="Playfair">Playfair</option>
+                    <option value="TBA" id="Aboreto">Aboreto</option>
+                    <option value="TBA" id="DancingScript">DancingScript</option>
+                </select>
+
+                <p class="settings-para">Random Background Image</p>
+                <div class="settings-font-backgroundSwitch">
+                    <input type="radio" name="textFormatSwitch" class="randomBackgorundSwitch textFormatSwitch"
+                        id="random-bg-image">
+                </div>
+
+            </div>
+        </div>
     </div>
 
-
-
-    <div class="settings-container flex-container">
-        <div class="flex-container" id="close-button-container">
-            <img src="./images/icons8-multiply-96.png" alt="close settings" id="close-settings-img">
-        </div>
-        <div class="settings-colors-container flex-container">
-            <p class="settings-para">Font Color</p>
-            <div id="settings-colorbox-container">
-                <label class="radio-container">
-                    <input type="radio" class="fontColorSwitch fontColorRadio">
-                    <span id="fontColorRadio-blue" class="radio-checkmark"></span>
-                </label>
-                <label class="radio-container">
-                    <input type="radio" class="fontColorSwitch fontColorRadio">
-                    <span id="fontColorRadio-black" class="radio-checkmark"></span>
-                </label>
-                <label class="radio-container">
-                    <input type="radio" class="fontColorSwitch fontColorRadio">
-                    <span id="fontColorRadio-white" class="radio-checkmark"></span>
-                </label>
-                <label class="radio-container">
-                    <input type="radio" class="fontColorSwitch fontColorRadio">
-                    <span id="fontColorRadio-red" class="radio-checkmark"></span>
-                </label>
-                <label class="radio-container">
-                    <input type="radio" class="fontColorSwitch fontColorRadio">
-                    <span id="fontColorRadio-green" class="radio-checkmark"></span>
-                </label>
-            </div>
-
-
-
-
-
-            <p class="settings-para">Background Color</p>
-            <div id="settings-colorbox-container">
-                <label class="radio-container">
-                    <input type="radio" class="backgroundColorSwitch fontColorRadio">
-                    <span id="fontColorRadio-blue" class="radio-checkmark"></span>
-                </label>
-                <label class="radio-container">
-                    <input type="radio" class="backgroundColorSwitch fontColorRadio">
-                    <span id="fontColorRadio-black" class="radio-checkmark"></span>
-                </label>
-                <label class="radio-container">
-                    <input type="radio" class="backgroundColorSwitch fontColorRadio">
-                    <span id="fontColorRadio-white" class="radio-checkmark"></span>
-                </label>
-                <label class="radio-container">
-                    <input type="radio" class="backgroundColorSwitch fontColorRadio">
-                    <span id="fontColorRadio-red" class="radio-checkmark"></span>
-                </label>
-                <label class="radio-container">
-                    <input type="radio" class="backgroundColorSwitch fontColorRadio">
-                    <span id="fontColorRadio-green" class="radio-checkmark"></span>
-                </label>
-            </div>
-
-
-
-        </div>
-        <div class="settings-format-container flex-container">
-            <p class="settings-para">Text Layout</p>
-            <div id="settings-colorbox-container">
-                <input type="radio" name="textLayoutSwitch" class="textLayoutSwitch" id="textLayout-left">
-                <input type="radio" name="textLayoutSwitch" class="textLayoutSwitch" id="textLayout-center">
-                <input type="radio" name="textLayoutSwitch" class="textLayoutSwitch" id="textLayout-right">
-            </div>
-
-            <p class="settings-para">Format</p>
-            <div id="settings-colorbox-container">
-                <input type="radio" name="textFormatSwitch" class="textFormatSwitch" id="textFormat-left">
-                <input type="radio" name="textFormatSwitch" class="textFormatSwitch" id="textFormat-center">
-                <input type="radio" name="textFormatSwitch" class="textFormatSwitch" id="textFormat-right">
-            </div>
-
-        </div>
-        <div class="settings-font-container flex-container">
-            <p class="settings-para">Font</p>
-            <select name="fontSelect" id="fontSelect">
-                <option value="TBA">TBA</option> <!-- Font styles has to be decided and added -->
-                <option value="TBA">TBA</option> <!-- Font styles has to be decided and added -->
-                <option value="TBA">TBA</option> <!-- Font styles has to be decided and added -->
-                <option value="TBA">TBA</option> <!-- Font styles has to be decided and added -->
-            </select>
-
-            <p class="settings-para">Random Background Image</p>
-            <div class="settings-font-backgroundSwitch">
-                <input type="radio" name="textFormatSwitch" class="randomBackgorundSwitch textFormatSwitch" id="random-bg-image">
-            </div>
-
-        </div>
-    </div>
 
     <footer>
         <div>

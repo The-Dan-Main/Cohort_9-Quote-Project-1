@@ -7,6 +7,11 @@
   --brown: #3e2723;
 }
 
+
+
+
+
+/* Main Font  */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap'
 );
 
@@ -23,6 +28,7 @@ body {
   background-color: white;
   padding: 10px;
   border-radius: 10px;
+  min-height: 400px;
 }
 
 .grid-item {
@@ -293,4 +299,36 @@ footer {
   margin-bottom: -30px;
   background-color: #3e2723;
   color: white;
+}
+
+
+#mainContainer {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Additional Fonts */
+
+/* font-family: 'Silkscreen', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+#Silkscreen {
+  font-family: 'Silkscreen', cursive;;
+}
+
+/* font-family: 'Playfair Display', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+#Playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+/* font-family: 'Aboreto', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+#Aboreto {
+  font-family: 'Aboreto', cursive;
+}
+
+/* font-family: 'Dancing Script', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+#DancingScript {
+  font-family: 'Dancing Script', cursive;
 }

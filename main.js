@@ -13,3 +13,5 @@ console.log(textLayoutSwitchButtons)
 console.log(textFormatSwitchButtons)
 console.log(randomBackgorundSwitchButton)
 console.log(fontSelect)
+
+
