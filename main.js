@@ -1,5 +1,5 @@
 'strict use'
-
+const allInputs = document.querySelectorAll("input")
 const fontColorSwitchButtons = document.getElementsByClassName("fontColorSwitch");
 const backgroundColorSwitchButtons = document.getElementsByClassName("backgroundColorSwitch");
 const textLayoutSwitchButtons = document.getElementsByClassName("textLayoutSwitch");
@@ -8,9 +8,7 @@ const formatReset = document.querySelector(".randomBackgorundSwitch")
 const fontSelect = document.querySelector("select")
 const quoteContainer = document.querySelector("#quote-container")
 
-
-
-
+// functions
 const changeBGColor = (event) => {
     quoteContainer.style.backgroundColor = event.target.title
 }
@@ -21,13 +19,11 @@ const changeTextFormat = (event) => {
     quoteContainer.classList.toggle(direction)
 }
 
-
 const changeTextLayout = (event) => {
     const shape = event.target.title
     quoteContainer.classList.remove("format-square", "format-wide", "format-high")
     quoteContainer.classList.toggle(shape)
 }
-
 
 const resetStyles = () => {
     quoteContainer.classList.remove("format-square", "format-wide", "format-high", "right", "left", "center");
@@ -37,9 +33,10 @@ const resetStyles = () => {
         fontFamily: "'Work Sans', sans-serif"
     }
     fontSelect.options.selectedIndex = 0;
+    for (let input of allInputs) {
+        input.checked = false;
+    }
 }
-
-
 
 const selectFont = (event) => {
     console.log(event.target.value)
@@ -49,7 +46,6 @@ const selectFont = (event) => {
 const changeFontColor = (event) => {
     quoteContainer.style.color = event.target.title
 }
-
 
 
 // Eventlisteners
