@@ -28,20 +28,25 @@
                 </h1>
             </div>
             <div class="flex-item">
-                <h2 id="quote-text">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elixfgdrgd drtg drgdrgdrg drg drg drg
-                </h2>
+                <h2 id="quote-text"> </h2>
             </div>
-            <div class="flex-item" >
-                <h3 id="quote-author">
-                   - Author
-                </h3>
+            <div class="flex-item">
+                <h3 id="quote-author-spacer"> - </h3>
+                <h3 id="quote-author"></h3>
             </div>
         </div>
 
+        <div id="buttonSection" class="flex-container">
+            <div id="settingsButton">
+                
+                <div id="settingsButtonBG">
+                    <h3 id="settingsTitle">Show Settings</h3>
+                </div>
+            </div>
+            <button id="randomQuoteButton">show random quote</button>
+        </div>
 
-
-        <div class="settings-container flex-container">
+        <div class="settings-container flex-container hidden">
             <div class="flex-container" id="close-button-container">
                 <img src="./images/icons8-multiply-96.png" alt="close settings" id="close-settings-img">
             </div>
@@ -49,23 +54,28 @@
                 <p class="settings-para">Font Color</p>
                 <div id="settings-colorbox-container">
                     <label class="radio-container">
-                        <input type="radio" class="fontColorSwitch fontColorRadio" title="var(--font-dark-blue)" name="fontColor">
+                        <input type="radio" class="fontColorSwitch fontColorRadio" title="var(--font-dark-blue)"
+                            name="fontColor">
                         <span class="radio-checkmark fontColorRadio-1"></span>
                     </label>
                     <label class="radio-container">
-                        <input type="radio" class="fontColorSwitch fontColorRadio" title="var(--font-green)" name="fontColor">
+                        <input type="radio" class="fontColorSwitch fontColorRadio" title="var(--font-green)"
+                            name="fontColor">
                         <span class="radio-checkmark fontColorRadio-2"></span>
                     </label>
                     <label class="radio-container">
-                        <input type="radio" class="fontColorSwitch fontColorRadio" title="var(--font-high-red)" name="fontColor">
+                        <input type="radio" class="fontColorSwitch fontColorRadio" title="var(--font-high-red)"
+                            name="fontColor">
                         <span class="radio-checkmark fontColorRadio-3"></span>
                     </label>
                     <label class="radio-container">
-                        <input type="radio" class="fontColorSwitch fontColorRadio" title="var(--font-light-yellow)" name="fontColor">
+                        <input type="radio" class="fontColorSwitch fontColorRadio" title="var(--font-light-yellow)"
+                            name="fontColor">
                         <span class="radio-checkmark fontColorRadio-4"></span>
                     </label>
                     <label class="radio-container">
-                        <input type="radio" class="fontColorSwitch fontColorRadio" title="var(--font-brown)" name="fontColor">
+                        <input type="radio" class="fontColorSwitch fontColorRadio" title="var(--font-brown)"
+                            name="fontColor">
                         <span class="radio-checkmark fontColorRadio-5"></span>
                     </label>
                 </div>
@@ -77,23 +87,28 @@
                 <p class="settings-para">Background Color</p>
                 <div id="settings-colorbox-container">
                     <label class="radio-container">
-                        <input type="radio" class="backgroundColorSwitch fontColorRadio" title="var(--copper" name="BGColor">
+                        <input type="radio" class="backgroundColorSwitch fontColorRadio" title="var(--copper"
+                            name="BGColor">
                         <span class="radio-checkmark BGColorRadio-1"></span>
                     </label>
                     <label class="radio-container">
-                        <input type="radio" class="backgroundColorSwitch fontColorRadio" title="var(--cosmic-Latte" name="BGColor">
+                        <input type="radio" class="backgroundColorSwitch fontColorRadio" title="var(--cosmic-Latte"
+                            name="BGColor">
                         <span class="radio-checkmark BGColorRadio-2"></span>
                     </label>
                     <label class="radio-container">
-                        <input type="radio" class="backgroundColorSwitch fontColorRadio" title="var(--cultured" name="BGColor">
+                        <input type="radio" class="backgroundColorSwitch fontColorRadio" title="var(--cultured"
+                            name="BGColor">
                         <span class="radio-checkmark BGColorRadio-3"></span>
                     </label>
                     <label class="radio-container">
-                        <input type="radio" class="backgroundColorSwitch fontColorRadio" title="var(--barnRed" name="BGColor">
+                        <input type="radio" class="backgroundColorSwitch fontColorRadio" title="var(--barnRed"
+                            name="BGColor">
                         <span class="radio-checkmark BGColorRadio-4"></span>
                     </label>
                     <label class="radio-container">
-                        <input type="radio" class="backgroundColorSwitch fontColorRadio" title="var(--Bistro" name="BGColor">
+                        <input type="radio" class="backgroundColorSwitch fontColorRadio" title="var(--Bistro"
+                            name="BGColor">
                         <span class="radio-checkmark BGColorRadio-5"></span>
                     </label>
                 </div>
@@ -105,15 +120,19 @@
                 <p class="settings-para">Text Layout</p>
                 <div id="settings-colorbox-container">
                     <input type="radio" class="textLayoutSwitch" id="textLayout-left" title="left" name="textLayout">
-                    <input type="radio" class="textLayoutSwitch" id="textLayout-center" title="center" name="textLayout">
+                    <input type="radio" class="textLayoutSwitch" id="textLayout-center" title="center"
+                        name="textLayout">
                     <input type="radio" class="textLayoutSwitch" id="textLayout-right" title="right" name="textLayout">
                 </div>
 
                 <p class="settings-para">Format</p>
                 <div id="settings-colorbox-container">
-                    <input type="radio" class="textFormatSwitch" id="textFormat-left" title="format-square" name="containerFormat">
-                    <input type="radio" class="textFormatSwitch" id="textFormat-center" title="format-high" name="containerFormat">
-                    <input type="radio" class="textFormatSwitch" id="textFormat-right" title="format-wide" name="containerFormat">
+                    <input type="radio" class="textFormatSwitch" id="textFormat-left" title="format-square"
+                        name="containerFormat">
+                    <input type="radio" class="textFormatSwitch" id="textFormat-center" title="format-high"
+                        name="containerFormat">
+                    <input type="radio" class="textFormatSwitch" id="textFormat-right" title="format-wide"
+                        name="containerFormat">
                 </div>
 
             </div>

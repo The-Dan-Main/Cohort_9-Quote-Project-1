@@ -55,6 +55,12 @@ body {
 
 .flex-item {
   padding: 0 30px 0 30px;
+  visibility:hidden;
+}
+
+
+#quote-author, #quote-author-spacer {
+  display: inline-block;
 }
 
 .navbar {
@@ -421,7 +427,7 @@ footer {
 .format-wide {
   justify-content: center;
   display: flex;
-  height: 500px;
+  height: 400px;
 }
 
 
@@ -450,4 +456,83 @@ footer {
 .right {
   align-items: flex-end;
   text-align: right;
+}
+
+#randomQuoteButton {
+  height: 56px;
+  width: 20%;
+  background-color: var(--Bistro);
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border: var(--Bistro) solid 2px;
+  border-radius: 10px;
+}
+
+#buttonSection {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+
+
+#settingsButton {
+  overflow: hidden;
+  height: 50px;
+  width: 20%;
+  border: var(--Bistro) solid 2px;
+  border-radius: 10px;
+}
+
+#settingsButton:hover #settingsTitle {
+  visibility: visible;
+}
+
+
+#settingsButtonBG {
+  background: url("./images/icons8-settings-98.png") repeat-x;
+  background-size: 50px;
+  height: 560px;
+  width: 5076px;
+  animation: slide 100s linear infinite;
+}
+
+@keyframes slide{
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-1692px, 0, 0);
+  }
+}
+
+#settingsTitle {
+  position: absolute;
+  display: inline;
+  background-color: var(--Bistro);
+  color: white;
+  border: var(--Bistro) solid 2px;
+  border-radius: 10px;
+  padding: 5px;
+  top: 10px;
+  margin: 0;
+  left: 45px;
+  animation: antiSlide 100s linear infinite;
+  font-size: 15px;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+@keyframes antiSlide{
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(1692px, 0, 0);
+  }
 }
