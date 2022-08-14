@@ -1,14 +1,14 @@
 'strict use'
-const allInputs = document.querySelectorAll("input")
+const allInputs = document.querySelectorAll("input").settings-container
 const fontColorSwitchButtons = document.getElementsByClassName("fontColorSwitch");
 const backgroundColorSwitchButtons = document.getElementsByClassName("backgroundColorSwitch");
 const textLayoutSwitchButtons = document.getElementsByClassName("textLayoutSwitch");
 const textFormatSwitchButtons = document.getElementsByClassName("textFormatSwitch");
-const formatReset = document.querySelector(".randomBackgorundSwitch")
+const formatReset = document.querySelector(".randomBackgroundSwitch")
 const fontSelect = document.querySelector("select")
 const quoteContainer = document.querySelector("#quote-container")
 const randomQuoteButton = document.getElementById("randomQuoteButton")
-const showSettingsButton =document.getElementById("settingsButton")
+const showSettingsButton = document.getElementById("settingsButton")
 const settingsContainer = document.querySelector(".settings-container")
 const closeSettingsImg = document.querySelector("#close-settings-img")
 const showSettingsButtonText = document.querySelector("#settingsTitle")
@@ -62,13 +62,6 @@ const toggleSettings = () => {
 }
 
 
-
-
-
-
-
-
-
 // API fatching
 const quoteTitle = document.getElementById("quote-title")
 const quoteText = document.getElementById("quote-text")
@@ -87,7 +80,6 @@ fetch("https://quote-garden.herokuapp.com/api/v3/quotes")
     .then((Response) => Response.json())
     .then((data) => {
         let Startindex = randomQuoteIndex()
-        // console.log(data.data[0].quoteText)
         quoteText.innerText = data.data[Startindex].quoteText
         quoteAuthor.innerText = data.data[Startindex].quoteAuthor
 
@@ -101,24 +93,14 @@ const getRandomQuote = () => {
     let page = randomPageIndex()
     let index = randomQuoteIndex()
 
-    // console.log(page)
-
     fetch(
         `https://quote-garden.herokuapp.com/api/v3/quotes?page=${page}`
-        )
+    )
         .then((Response) => Response.json())
         .then((data) => {
-            // console.log("index: ", index)
-            // console.log("page: ",data.pagination.currentPage)
-            // console.log("lenght: ", data.data.length)
-            // console.log(data.data[index].quoteText)
-            // console.log("-----------------")
             quoteText.innerText = data.data[index].quoteText
             quoteAuthor.innerText = data.data[index].quoteAuthor
         })
-
-
-
 }
 
 

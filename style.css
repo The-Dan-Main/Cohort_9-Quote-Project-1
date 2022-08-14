@@ -55,11 +55,12 @@ body {
 
 .flex-item {
   padding: 0 30px 0 30px;
-  visibility:hidden;
+  visibility: hidden;
 }
 
 
-#quote-author, #quote-author-spacer {
+#quote-author,
+#quote-author-spacer {
   display: inline-block;
 }
 
@@ -157,7 +158,8 @@ body {
   outline-offset: -2px;
 }
 
-.textFormatSwitch:checked, .textLayoutSwitch:checked {
+.textFormatSwitch:checked,
+.textLayoutSwitch:checked {
   border: solid black 2px;
 }
 
@@ -243,7 +245,7 @@ body {
 
 .textFormatSwitch,
 .textLayoutSwitch,
-.randomBackgorundSwitch {
+.randomBackgroundSwitch {
 
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -502,10 +504,11 @@ footer {
   animation: slide 100s linear infinite;
 }
 
-@keyframes slide{
+@keyframes slide {
   0% {
     transform: translate3d(0, 0, 0);
   }
+
   100% {
     transform: translate3d(-1692px, 0, 0);
   }
@@ -528,10 +531,11 @@ footer {
   cursor: pointer;
 }
 
-@keyframes antiSlide{
+@keyframes antiSlide {
   0% {
     transform: translate3d(0, 0, 0);
   }
+
   100% {
     transform: translate3d(1692px, 0, 0);
   }
