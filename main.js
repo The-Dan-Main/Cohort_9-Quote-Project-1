@@ -1,5 +1,5 @@
 'strict use'
-const allInputs = document.querySelectorAll("input").settings-container
+const allInputs = document.querySelectorAll("input")
 const fontColorSwitchButtons = document.getElementsByClassName("fontColorSwitch");
 const backgroundColorSwitchButtons = document.getElementsByClassName("backgroundColorSwitch");
 const textLayoutSwitchButtons = document.getElementsByClassName("textLayoutSwitch");
